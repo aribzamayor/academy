@@ -1,0 +1,1146 @@
+// Runs on initial load
+void setup()
+{
+	size(500,500);
+	background(255,255,255);
+	strokeWeight(1);
+}
+//var x = 100;
+//var y = 280;
+//var faceSize = 400;
+//var earSize = faceSize * 1/2;
+//var eyeSize = faceSize/8;
+var x = 150;
+var y = 150;
+var bodySize = 250;
+var legSize = bodySize/(25/2);
+var headSize = bodySize/5;
+var eyeSize = bodySize/25;
+var tailSize = bodySize/25;
+draw = function()
+{	
+	background(255, 255, 255);
+
+	//body
+	fill(120,95,55);
+	ellipse(x,y,bodySize,bodySize-140);
+
+	//legs
+	fill(0,0,0);
+	rect(x+bodySize-200,y+bodySize-220,legSize,bodySize*(7/25));
+	rect(x+bodySize-330,y+bodySize-220,legSize,bodySize*(7/25));
+
+	//tail
+	fill(120,95,55);
+	rect(x+bodySize-350,x+bodySize-320,tailSize,bodySize/(25/4));
+
+	//head
+	fill(0,0,0);
+	ellipse(x+bodySize-120,y+bodySize-260,headSize,headSize);
+
+	//eye
+	fill(255,255,255);
+	ellipse(x+bodySize-110,y+bodySize-270,eyeSize,eyeSize);
+
+	bodySize++;
+
+	//(//ears
+	//fill(89, 52, 17);
+	//ellipse(x-faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+	//ellipse(x+faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+
+	//face
+	//fill(163, 113, 5);
+	//ellipse(x, y, faceSize, faceSize);
+
+	//eyes
+	//fill(0, 0, 0);
+	//ellipse(x-faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+	//ellipse(x+faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+	
+	//nose
+	//fill(89, 52, 20);
+	//ellipse(x, y+faceSize/8, faceSize*4/15, faceSize/5);
+
+	//faceSize++;
+	//)
+}
+
+
+Text Mousex
+// Runs on initial load
+void setup()
+{
+	size(500,500);
+	
+}
+
+	var xValue = "Java Script Programming"
+draw = function()
+{	
+	background(255, 255, 255);
+	fill(255, 0, 255);
+
+	ellipse(mouseX, mouseY, 12, 12);
+
+	fill(0,0,0);
+	text(xValue,mouseX,mouseY);
+	textSize(200);
+
+
+
+}
+
+
+My ad
+// Runs on initial load
+void setup()
+{
+	size(500,500);
+	
+}
+
+	var cursor = "Computer Everything";
+	var title = "COMPUTER EVERYTHING";
+	var body = "Come for your computer and electronic gadgets";
+	var l1 = "USB drive";
+	var l2 = "Computer";
+	var l3 = "Network cable";
+	var l4 = "Computer training";
+draw = function()
+{	
+	background(15, 250, 129);
+
+	//Cursor movement
+	fill(171, 201, 222);
+	ellipse(mouseX, mouseY, mouseX, mouseY);
+
+	//text with cursor
+	fill(0,0,0);
+	text(cursor,mouseX,mouseY);
+	
+	//title
+	fill(255,255,255);
+	textSize(30);
+	text(title, 100, 40);
+	
+	fill(250, 242, 15); // head
+	ellipse(50,30,40,40);
+	
+	// left eye
+	fill(0,0,0);
+	ellipse(45,20,5,5);
+	
+	// right eye
+	ellipse(60,20,5,5);
+	
+	//mouth
+	ellipse(55,33,8,8);
+
+	// body
+	line(50, 50, 50, 90 );
+	// left hand
+	line(20,80,50,65);
+
+	//right hand
+	line(80,80,50,65);
+
+	//left leg
+	line(20,120,50,90);
+	
+	//right leg
+	line(80,120,50,90);
+
+	textSize(18);
+	text(body, 95, 80 );
+	text(l1, 80,180);
+	text(l2,80,220);
+	text(l3,80,260);
+	text(l4,80,300);
+	
+}	
+
+my name moving
+// Runs on initial load
+{
+	size(500,500);
+	
+}
+
+
+draw myName = function()
+{	
+	var textX = random(0, 300);
+	var textY = random(0, 300);
+	var yourName = "Abdul Bawa";
+	background(15, 250, 129);
+
+	fill(0, 0, 0);
+	textSize(30);
+	text("Hiiii, " + yourName, textX, textY);
+	
+};
+myName();
+
+
+drawmole code
+
+// Runs on initial load
+
+{
+	size(500,500);
+	
+}
+
+
+var drawMole = function(moleX, moleY)
+{
+
+    noStroke();
+    fill(125, 93, 43);
+    ellipse(moleX, moleY, 60, 60); // face
+    fill(255, 237, 209);
+    ellipse(moleX, moleY+10, 33, 28); 
+    fill(0, 0, 0);
+    ellipse(moleX-10, moleY-15, 10, 10); // eyes
+    ellipse(moleX+10, moleY-15, 10, 10);
+    ellipse(moleX, moleY-5, 10, 10); // nose
+    ellipse(moleX, moleY+10, 20, 5); // mouth
+
+
+
+	
+};
+	background(52, 168, 83); // green grass
+	fill(0, 0, 0);
+	ellipse(200, 200, 100, 30); // holes!
+	ellipse(70, 119, 100, 30);
+	ellipse(300, 60, 100, 30);
+	ellipse(297, 350, 100, 30);
+	drawMole(200,180);
+	drawMole(70,105);
+	drawMole(300,40);
+	drawMole(297,325);
+
+calculator
+// Runs on initial load
+
+{
+	size(500,500);
+	
+}
+
+
+   var add = function(num1, num2) {
+    return num1 + num2;
+};
+	var subtract = function(num1, num2) {
+    return num1 - num2;
+};
+	var multiply = function(num1, num2) {
+    return num1 * num2;
+};
+	var divide = function(num1, num2) {
+    return num1 / num2;
+};
+
+	fill(255, 0, 0);
+	text("15 + 3 is " + add(15, 3), 10, 20);
+	text("15 - 3 is " + subtract(15, 3), 10, 50);
+	text("15 * 3 is " + multiply(15, 3), 10, 80);
+	text("15 / 3 is " + divide(15, 3), 10, 110);
+
+	text("8 + 4 is " + add(8, 4), 10, 170);
+	text("8 - 4 is " + subtract(8, 4), 10, 200);
+	text("8 * 4 is " + multiply(8, 4), 10, 230);
+	text("8 / 4 is " + divide(8, 4), 10, 260);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+fish tank
+// Runs on initial load
+
+{
+    size(500,500);
+    
+}
+
+
+background(89, 216, 255);
+var fish = function(centerX,centerY)
+{
+
+var bodyLength = 118;
+var bodyHeight = 74;
+var bodyColor = color(162, 0, 255);
+
+noStroke();
+fill(bodyColor);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+fill(mouseY,mouseY,mouseY),
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+}
+    var xMove=random(20, 450);
+    var yMove=random(10, 500);
+draw = function()
+{
+    ellipse(xMove,yMove,50,50);
+
+}
+fish(105,50);
+fish(105,150);
+fish(105,250);
+fish(105,350);
+fish(105,450);
+fish(270,50);
+fish(270,150);
+fish(270,250);
+fish(270,350);
+fish(270,450);
+fish(430,50);
+fish(430,150);
+fish(430,250);
+fish(430,350);
+fish(430,450);
+
+moving ball
+// Runs on initial load
+
+{
+	size(500,500);
+	
+}
+  // position of the ball
+var y = 0;
+// how far the ball moves every time
+var speed = 2;
+
+draw = function() {
+    background(127, 204, 255);
+    
+    fill(66, 66, 66);
+    ellipse(200, y, 50, 50);
+
+	if (y>450) 
+	{
+		speed=-2
+	}
+	if (y<30) 
+	{
+		speed=2
+	}
+
+    // move the ball
+    y = y + speed;
+};
+
+blank workspace
+
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	noStroke();
+	
+}
+
+  draw = function() {
+	if (mousePressed) 
+	{	
+		fill(167, 173, 50);
+		ellipse(mouseX, mouseY, 10, 10);	
+	}
+}
+
+analysis of number "0"
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+  draw = function() {
+	
+var theNumber = -123;
+
+fill(0, 0, 0);
+textSize(30);
+text("Analysis of: " + theNumber, 10, 36);
+
+
+if (theNumber > 0) {
+	text("It's positive", 10, 90);
+	noFill();
+	rect(5, 60, 200, 40); 	
+}
+if (theNumber < 0) {
+	text("It's negative", 10, 140);
+	noFill();
+	rect(5, 113, 200, 40); 
+	
+}
+if (theNumber === 0) {
+	text("It's zero", 10, 190);
+	noFill();
+	rect(5, 160, 200, 40);
+}
+
+}
+
+000014-054KFM-8FFT01-MG3UQD-1K1C7G-9K4N8C-MGZXCU-78UMB9-W24VXP-QA4JT1
+
+mouse is pressed 1
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+draw = function() {
+	
+    fill(0, 255, 68); // start color
+    rect(0, 0, 400, 200);  // the button
+
+    // The button text
+    fill(0, 0, 0);
+    textSize(30);
+    text("Press me!", 145, 115);
+
+	if (mousePressed) {
+		fill(0, 0, 0); // start color
+    	rect(0, 0, 400, 200);  // the button
+	}
+
+
+	
+};
+
+exact mousepressed 2
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+draw = function() {
+    fill(0, 255, 68); // start color
+	rect(50, 150, 250, 100);  // the button
+
+    
+    // The button text
+    fill(0, 0, 0);
+    textSize(30);
+    text("PRESS ME!", 93, 193);
+
+    if (mousePressed && mouseX > 50 && mouseX < 300 && mouseY > 150 && mouseY < 250) 
+	{ 
+        fill(0, 0, 0); // click color
+		rect(50, 150, 250, 100);  // the button
+    }
+
+};
+
+	MAGIC 8-BALL
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+var answer = floor(random(1, 5));
+draw = function() {
+	fill(0, 0, 0);
+	ellipse(200, 200, 375, 375);
+	fill(60, 0, 255);
+	triangle(200, 104, 280, 280, 120, 280);
+	fill(255, 255, 255);
+	
+	if (answer === 0) {
+    	text("IT'S", 180, 200);
+    	text("OBVIOUS", 175, 229);
+	}
+	else if (answer === 1) {
+		text("MOST", 180, 200);
+		text("DEFINITELY", 173, 229);
+	}
+	else if (answer === 2) {
+		text("PROBABLY", 170, 200);
+    	text("NOT", 175, 229);
+	}
+	else if (answer === 3) {
+		text("MOST", 180, 200);
+    	text("LIKELY", 175, 229);
+	}
+	else {
+		text("MAYBE", 180, 200);
+    	text("LATER", 175, 229);
+	}
+}
+
+while loop
+// Runs on initial load
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+draw = function() {
+
+	fill(17, 0, 255);
+
+	// a handy dandy ruler across the top
+	var x = 0;
+	while (x < 400) {
+		text(x, x, 10);
+		x+=50
+	}
+
+
+}
+
+grass and tree
+first copy the image of grass and tree to js folder
+
+// Runs on initial load
+// @pjs preload="tree.jpg";
+
+PImage tree;
+void setup()
+
+{
+	tree = loadImage("js/tree.jpg");
+	grass = loadImage("js/grass.jpg")
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+
+draw = function() {
+
+	background(144, 240, 234);
+
+// Draw the sun
+noStroke();
+fill(255, 140, 0);
+ellipse(335, 66, 70, 70);
+// Get images from library and remember in variables
+
+//var tree = getImage("cute/TreeUgly");
+
+// Draw the tree and grass once
+	
+
+	var x=0;
+while(x<500){
+	image(tree, x, 330, 100,80);
+	image(grass,x,400,100,80)
+    x+=100;
+}
+
+}
+
+repeated lined
+
+
+// Runs on initial load
+// @pjs preload="tree.jpg";
+
+PImage tree;
+void setup()
+
+{
+	tree = loadImage("js/tree.jpg");
+	grass = loadImage("js/grass.jpg")
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+
+draw = function() {
+
+	background(144, 240, 234);
+
+background(255, 255, 247);
+stroke(173, 222, 237);
+
+
+for (var i = 0; i < 20; i++) {
+	var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+	
+}
+
+/*var i = 0;
+while (i < 20) {
+    var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+    i++;
+}
+*/
+
+}
+
+
+
+grid line
+
+
+// Runs on initial load
+// @pjs preload="tree.jpg";
+
+PImage tree;
+void setup()
+
+{
+	tree = loadImage("js/tree.jpg");
+	grass = loadImage("js/grass.jpg")
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+
+draw = function() {
+
+	background(144, 240, 234);
+
+background(255, 255, 247);
+stroke(173, 222, 237);
+
+
+for (var col = 0; col < 10; col++) {
+    for (var row = 0; row < 15; row++) {
+        rect(col*20, row*20, 20, 20);
+    }
+}
+
+/*var i = 0;
+while (i < 20) {
+    var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+    i++;
+}
+*/
+
+}
+
+House
+
+// Runs on initial load
+// @pjs preload="tree.jpg";
+
+PImage tree;
+void setup()
+
+{
+	tree = loadImage("js/tree.jpg");
+	grass = loadImage("js/grass.jpg")
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+
+draw = function() {
+	
+background(144, 240, 234);
+
+
+
+stroke(173, 222, 237);
+
+fill(174, 180, 214);
+triangle(200, 28, 350, 150, 50, 150);
+
+
+// building
+fill(255, 255, 255);
+rect(60, 150, 280, 207);
+
+
+
+// bricks
+for (var x=65; x < 325; x=x+20) {
+	for (y = 155; y < 350; y=y+20) {
+		fill(245, 5, 13)
+		rect(x, y, 20, 10);	
+	}
+}
+
+// door
+fill(120, 80, 19);
+rect(180, 280, 40, 77);
+
+for (var col = 9; col < 11; col++) {
+    for (var row = 9; row < 11; row++)
+        rect(col*20, row*20, 20, 20);
+    }
+
+var x=0;
+while(x<500){
+	image(tree, x, 355, 100,100);
+	image(grass,x,440,100,60)
+    x+=100;
+}
+
+
+
+}
+
+favourite fruits
+
+// Runs on initial load
+void setup()
+
+{
+
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+var myFavFruits = ["Banana", "Water Melon", "Mango"]
+draw = function() {
+	textSize(30)
+	text(myFavFruits[0], 10, 30);
+	text(myFavFruits[1], 10, 80);
+	text(myFavFruits[2], 10, 130);
+
+	//My top 3 favorite fruits
+	text("My " + "top " + myFavFruits.length + " favourite " + "fruits", 10, 180)
+
+
+
+}
+
+favourite animals
+
+// Runs on initial load
+void setup()
+
+{
+
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+var favAnimals = ["Cat", "Wolf", "Ram", "Chicken"];
+var animalNum = 0;
+draw = function() {
+	while (animalNum < favAnimals.length) {
+		text(favAnimals[animalNum], 10, 20+animalNum*20);
+		animalNum++;
+	}
+
+
+
+
+}
+
+
+draw stars
+
+// Runs on initial load
+void setup()
+
+{
+	star = loadImage("js/star.jpg");
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+var xPositions = [20];
+var yPositions = [20];
+
+draw = function() {
+
+var drawStars = function() {
+	if (mousePressed) {
+		xPositions.push(mouseX);
+		yPositions.push(mouseY);
+	
+	}
+    background(9, 5, 59);
+    //this is not needed
+    /*imageMode(CENTER);*/
+    for (var i = 0; i < yPositions.length; i++) {
+        image(star, xPositions[i], yPositions[i], 30, 30);
+    }
+};
+
+drawStars();
+}
+
+
+make it rain
+
+// Runs on initial load
+void setup()
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+var xPositions = [200];
+var yPositions = [0];
+
+draw = function() {
+     if (mousePressed) {
+		xPositions.push(mouseX);
+		yPositions.push(mouseY);
+     }
+    background(204, 247, 255);
+
+    noStroke();
+    fill(0, 200, 255);
+   
+    for (var i = 0; i < xPositions.length; i=i+5) {
+        ellipse(xPositions[i], yPositions[i], 10, 10);
+        yPositions[i] += 2;
+    }
+    
+    
+};
+
+
+Bread recipe
+
+// Runs on initial load
+void setup()
+
+{
+	size(500,500);
+	background(50, 167, 173);
+	
+}
+
+var bread = {
+    recipeTitle: "Bread",
+    recipeServings: 2,
+    recipeIngredients: ["flour", "Water"],
+
+}
+draw = function() {
+
+    fill(26, 26, 26);
+    textSize(20);
+    text(bread.recipeTitle, 10, 23);
+    text("Serves: " + bread.recipeServings, 10, 55);
+    text("Ingredients: " + bread.recipeIngredients, 10, 85);
+        
+        
+};
+
+PaintBrush
+// Runs on initial load
+
+{
+    size(500,500);
+    
+}
+
+
+background(89, 216, 255);
+
+var paintBrush = {
+    x: 200,
+    y: 200,
+    img: loadImage("js/leaf.jpg")
+};
+
+draw = function() {
+
+var paintCanvas = function() {
+    imageMode(CENTER);
+    image(paintBrush.img, mouseX, mouseY);
+};
+
+paintCanvas()
+};
+
+movies reviews
+// Runs on initial load
+{
+    size(500,500,500);
+}
+
+background(89,216,255);
+var movies = [
+    {
+        title: "Puff the Magic Dragon",
+        review: "Best movie ever!!",
+    },
+    {
+        title: "Avengers",
+        review: "Action filled",
+    }
+    ];
+draw= function() {
+    fill(84, 140, 209);
+    textAlign(CENTER, CENTER);
+    textSize(20);
+
+
+    for(var moves = 0;moves < movies.length;moves++)
+        {
+            text(movies[moves].title, 100, 100+moves*100);
+            text(movies[moves].review, 100, 80+moves*100);
+        }
+};
+
+
+Bookshelf
+// Runs on initial load
+{
+    size(500,500,500);
+}
+
+var book = {
+    title: "The Giver",
+    stars: 4,
+    title2: "Harry Potter",
+    title3: "Physics"
+};
+star = loadImage("js/star.jpg");
+draw= function() {
+    
+background(89, 216, 255);
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+// draw one book
+fill(214, 255, 219);
+rect(10, 20, 90, 100);
+fill(0, 0, 0);
+text(book.title, 15, 29, 70, 100);
+for (var i = 0; i < book.stars; i++) {
+    image(star, 13 + i * 20, 90, 20, 30);
+}
+// draw second book
+fill(243, 247, 10);
+rect(150, 20, 90, 100);
+fill(0, 0, 0);
+text(book.title2, 155, 29, 70, 100);
+for (var i = 0 ; i < book.stars; i++) {
+    image(star, 155 + i * 20, 90, 20, 30);
+}
+// draw third book
+fill(247, 53, 10);
+rect(300, 20, 90, 100);
+fill(0, 0, 0);
+text(book.title3, 320, 29, 70, 100);
+for (var i = 0 ; i < book.stars; i++) {
+    image(star, 305 + i * 20, 90, 20, 30);
+}
+
+};
+
+rainbow
+// Runs on initial load
+{
+    size(500,500,500);
+}
+
+draw = function() {
+
+    
+background(89, 216, 255);
+
+var Rainbow = function(x, y, radius){
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+};
+
+var bigRainbow = new Rainbow(180, 150, 200);
+var smallRainbow = new Rainbow(180, 250, 200);
+
+var drawRainbow = function(rainbow) {
+    noFill();
+    strokeWeight(5);
+    stroke(255, 0, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius, rainbow.radius, 1, 180);
+    stroke(250, 200, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius-10, rainbow.radius-10, 1, 180);
+    stroke(240, 255, 102);
+    arc(rainbow.x, rainbow.y, rainbow.radius-20, rainbow.radius-20, 1, 180);
+    stroke(29, 255, 13);
+    arc(rainbow.x, rainbow.y, rainbow.radius-30, rainbow.radius-30, 1, 180);
+    stroke(122, 155, 255);
+    arc(rainbow.x, rainbow.y, rainbow.radius-40, rainbow.radius-40, 1, 180);
+
+};
+
+drawRainbow(bigRainbow);
+drawRainbow(smallRainbow);
+};
+
+smilling face
+// Runs on initial load
+{
+    size(500,500,500);
+}
+
+draw = function() {
+
+background(89, 216, 255);
+
+var SmileyFace = function(centerX, centerY) {
+    this.centerX = centerX;
+    this.centerY = centerY;
+};
+
+var txt = "i am smilling";
+
+SmileyFace.prototype.draw = function() {
+    fill(255, 234, 0);
+    ellipse(this.centerX, this.centerY, 150, 150);
+    fill(0, 0, 0);
+    ellipse(this.centerX-30, this.centerY-30, 20, 20); 
+    ellipse(this.centerX+30, this.centerY-30, 20, 20); 
+    noFill(); 
+    strokeWeight(3);
+    arc(this.centerX, this.centerY+10, 60, 40, 0, 1 * PI);
+};
+
+SmileyFace.prototype.speak = function() {
+    text(txt, this.centerX-30, this.centerY+100);
+};
+var smiley = new SmileyFace (200, 200);
+
+smiley.draw();
+smiley.speak();
+
+};
+
+growing flower
+// Runs on initial load
+{
+    size(500,500,500);
+}
+
+draw = function() {
+
+/*************
+*OBJECT TYPES
+**************/
+/******************
+*Flower Object Type
+*******************/
+
+
+/*****************
+*Tulip Object Type
+******************/
+var Flower = function(x, y, height) {
+    this.x = x;
+    this.y = y;
+    this.height = height;
+};
+
+var Tulip = function(x, y, height) {
+    Flower.call(this, x, y, height);
+};
+
+Tulip.prototype = Object.create(Flower.prototype);
+
+Tulip.prototype.draw = function() {
+    noStroke();
+    fill(16, 122, 12);
+    rect(this.x, this.y, 10, -this.height);
+    fill(255, 0, 0);
+    // petals
+    ellipse(this.x+5, this.y-this.height, 44, 44);
+    triangle(this.x-16, this.y-this.height, 
+            this.x+20, this.y-this.height,
+            this.x-20, this.y-this.height-31);
+    triangle(this.x-14, this.y-this.height, 
+            this.x+24, this.y-this.height,
+            this.x+3, this.y-this.height-39);
+    triangle(this.x+-4, this.y-this.height, 
+            this.x+26, this.y-this.height,
+            this.x+29, this.y-this.height-36);
+};
+
+Flower.prototype.growBy = function(amount) {
+    this.height += amount * 2;
+};
+
+/*********************
+*Sunflower Object Type
+**********************/
+var Sunflower = function(x, y, height) {
+    Flower.call(this, x, y, height);
+};
+
+Sunflower.prototype = Object.create(Flower.prototype);
+
+Sunflower.prototype.draw = function() {
+    fill(16, 122, 12);
+    
+    rect(this.x, this.y, 10, -this.height);
+    
+    // petals
+    stroke(0, 0, 0);
+    fill(255, 221, 0);
+    ellipse(this.x-10, this.y-this.height, 20, 18);
+    ellipse(this.x+5, this.y-this.height-15, 20, 18);
+    ellipse(this.x+5, this.y-this.height+15, 20, 18);
+    ellipse(this.x+20, this.y-this.height, 20, 18);
+    fill(20, 20, 20);
+    ellipse(this.x+5, this.y-this.height, 20, 20);
+};
+
+
+/**************
+*MAIN PROGRAM
+***************/
+
+/** create object instances **/
+var tulip = new Tulip(38, 390, 150);
+var sunflower = new Sunflower(186, 390, 100);
+var tulip2 = new Tulip(120, 390, 100);
+var sunflower2 = new Sunflower(250, 390, 80);
+
+
+var drawScene = function() {
+    background(207, 250, 255);
+    tulip.draw();
+    sunflower.draw();
+    tulip2.draw();
+    sunflower2.draw();
+};
+
+mouseClicked = function() {
+    tulip.growBy(10);
+    sunflower.growBy(20);
+    tulip2.growBy(10);
+    sunflower2.growBy(20);
+};
+
+drawScene();
+
+};
