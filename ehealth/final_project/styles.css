@@ -26,8 +26,22 @@ padding: 10px;
 height: 150px;
 }
 
-.left, .right {
-width: 25%;
+.left{
+  width: 25%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+  position: relative;
+  bottom: 5px;
+}
+
+.right{
+  width: 25%;
+  float: left;
+  padding: 10px;
+  height: 150px;
+  position: relative;
+  bottom: 15px;
 }
 
 .middle {
@@ -116,7 +130,8 @@ body {
   display: inline-block;
   height: 20px;
   position: relative;
-  width: 55px;
+  left: 5px;
+  width: 44px;
 }
 
 .theme-switch input {
@@ -139,10 +154,11 @@ body {
   bottom: 0.5px;
   content: "";
   height: 20px;
-  left: 4px;
+  left: -1px;
   position: absolute;
   transition: .4s;
   width: 20px;
+  background-color: blue;
 }
 
 input:checked + .slider {
