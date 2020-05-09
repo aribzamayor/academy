@@ -192,3 +192,17 @@ input:checked + .slider:before {
   top: 45px;
   color: blue;
 }
+
+/* cv download */
+.cv{
+  position: relative;
+  left: 1295px;
+  top: 200px;
+
+}
+.down{
+  position: relative;
+  left: 1297px;
+  top: 200px;
+  font-size: 50px;
+}
