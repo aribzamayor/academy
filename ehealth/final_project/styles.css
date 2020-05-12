@@ -24,12 +24,14 @@ box-sizing: border-box;
 float: left;
 padding: 10px;
 height: 150px;
+clear: right;
+clear: top;
 }
 
 .left{
   width: 25%;
   float: left;
-  padding: 10px;
+  padding: 5px;
   height: 150px;
   position: relative;
   bottom: 5px;
@@ -38,7 +40,7 @@ height: 150px;
 .right{
   width: 25%;
   float: left;
-  padding: 10px;
+  padding: 15px;
   height: 150px;
   position: relative;
   bottom: 15px;
@@ -46,6 +48,11 @@ height: 150px;
 
 .middle {
 width: 50%;
+float: left;
+padding: 10px;
+height: 150px;
+position: relative;
+bottom: 0px;
 }
 
 /* Clear floats after the columns */
@@ -62,9 +69,11 @@ height: auto;
 }
 
 body {
-font-size: 16px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-animation: smoothIN 1s;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: smoothIN 1s;
 }
 
 /* Body Transition*/
@@ -104,22 +113,27 @@ background-color: blue;
 /* light and dark Colors */
 :root {
 
-  --bg-color: rgb(255, 255, 255);
+  /* --bg-color: rgb(255, 255, 255); */
+
+  --bg-color: url('bg2.svg');
+  background-size: cover;
+
 }
 
 [data-theme="dark"] {
   --font-color: rgb(225, 225, 255);
-  --bg-color: rgb(0,0,0);
+  --bg-color: url('bg.svg');
   --heading-color: rgb(129, 140, 171);
 }
 body {
-  background-color: var(--bg-color);
+  background-image: var(--bg-color);
+  background-size: cover;
   color: var(--font-color);
 }
 
 /* Toggle Switch*/
 .theme-switch-wrapper {
-  position: absolute;
+  position: fixed;
   left: 1300px;
   top: 45px;
   display: flex;
@@ -179,7 +193,7 @@ input:checked + .slider:before {
 
 /* Sun Icon*/
 .sun{
-  position: absolute;
+  position: fixed;
   left: 1275px;
   top: 45px;
   color: blue;
@@ -187,7 +201,7 @@ input:checked + .slider:before {
 
 /* Moon Icon*/
 .moon{
-  position: absolute;
+  position: fixed;
   left: 1365px;
   top: 45px;
   color: blue;
@@ -195,14 +209,16 @@ input:checked + .slider:before {
 
 /* cv download */
 .cv{
-  position: relative;
-  left: 1295px;
-  top: 200px;
+  position: absolute;
+  left: 1176px;
+  top: 77px;
+  border: none;
 
 }
 .down{
-  position: relative;
-  left: 1297px;
-  top: 200px;
+  position: absolute;
+  left: 1180px;
+  top: 38px;
   font-size: 50px;
+
 }
